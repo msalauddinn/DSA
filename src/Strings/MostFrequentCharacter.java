@@ -49,11 +49,30 @@ public class MostFrequentCharacter {
         return ans;
     }
 
+    public static char mostFrequentChar(String s){
+        int[] freq = new int[26];
+
+        for (int i = 0; i < s.length(); i++){
+            char ch = s.charAt(i);
+            freq[ch-97]++;
+        }
+
+        int max = -1;
+        char ans = s.charAt(0);
+        for (int i = 0; i < freq.length; i++){
+            if (freq[i] > max){
+                max = freq[i];
+                ans = (char) (i + 97);
+            }
+        }
+        return ans;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         String s = sc.nextLine();
 
-        System.out.println(mostFrequents(s));
+        System.out.println(mostFrequentChar(s));
     }
 }
