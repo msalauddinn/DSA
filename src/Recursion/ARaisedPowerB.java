@@ -2,16 +2,19 @@ package Recursion;
 
 import java.util.Scanner;
 
-public class APowerB {
+public class ARaisedPowerB {
 
-    public static int pow (int a, int b) throws Exception {
+    public static int power(int a, int b) throws Exception {
         if (a == 0 && b == 0) throw new Exception("Indeterminate form");
-        if (a == 0 || a == 1) return a;
+        if (a == 1 || a == 0) return 1;
         if (b == 0) return 1;
-        return a * pow(a, b-1);
+        if (b == 1) return a;
+        int pow = power(a, b/2);
+        if (b % 2 == 0) return pow * pow;
+        else return pow * pow * a;
     }
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter Base : ");
@@ -25,6 +28,6 @@ public class APowerB {
             return;
         }
 
-        System.out.println(a + " raised to the power " + b + " = " + pow(a, b));
+        System.out.println(a + " raised to the power " + b + " = " + power(a, b));
     }
 }
