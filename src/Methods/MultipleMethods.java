@@ -9,6 +9,7 @@ public class MultipleMethods {
         System.out.println("Sakil");
     }
     public static void eva(){
+        toumik();
         System.out.println("Aditya");
     }
     public static void toumik(){
