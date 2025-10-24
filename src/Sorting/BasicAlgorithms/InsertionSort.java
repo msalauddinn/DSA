@@ -1,6 +1,4 @@
 package Sorting.BasicAlgorithms;
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class InsertionSort {
@@ -34,8 +32,6 @@ public class InsertionSort {
 
     public static void insertionSort(int[] arr){
         int n = arr.length;
-
-        Arrays.sort(arr);
 
         for (int i = 1; i < n; i++){
             int j = i;
