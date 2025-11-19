@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.SinglyLinkedList;
 class Node { // User defined data type
     int data;
     Node next;

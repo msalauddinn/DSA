@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.SinglyLinkedList;
 
 public class DetectLoop {
     public boolean detectLoop(Node head) {

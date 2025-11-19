@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.SinglyLinkedList;
 
 public class FindFistNode {
 //    public int cycleStart(Node head) {

@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.SinglyLinkedList;
 
 public class MiddleOfALInkedList {
     int getMiddle(Node head) {

@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.SinglyLinkedList;
 
 public class IntersectionOfTwoLinkedList {
     public Node intersectPoint(Node head1, Node head2) {
