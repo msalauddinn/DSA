@@ -59,9 +59,9 @@ public class SwappingNodesInLinkedList {
             slow = slow.next;
             fast = fast.next;
         }
-        int t = slow.data;
+        int temp = slow.data;
         slow.data = kthFromStart.data;
-        kthFromStart.data = t;
+        kthFromStart.data = temp;
 
         return head;
     }
